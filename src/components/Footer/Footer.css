@@ -1,0 +1,18 @@
+.home-footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    Height:209px;
+    width: 100%;
+    background-color: black;
+}
+.footer-logo{
+    width: 150px;
+    height: 59px;
+}
+.footer-text{
+    color: white;
+    font-size: 24px; 
+    font-family: Montserrat;
+}

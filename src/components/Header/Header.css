@@ -1,0 +1,35 @@
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 35px 0;
+}
+  
+.home-logo {
+  Width:210.32px;
+  Height:68px;
+}
+  
+.home-nav {
+  display: flex;
+  justify-content: space-between;
+  width: 309px;
+  padding:  20px 0 0 0 ;
+}
+  
+.home-nav-link {
+  color: #282c34; 
+  font-size:  24px;
+  font-family: Montserrat;
+  text-decoration: none ;}
+  
+.home-nav-link:hover {
+  text-decoration: underline;
+}
+  
+.underline-on-active {
+  text-decoration: underline !important;
+}
+
+.underline-on-active {
+  text-decoration: underline;
+}
