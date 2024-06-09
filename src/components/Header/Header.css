@@ -1,7 +1,6 @@
 .home-header {
   display: flex;
   justify-content: space-between;
-  margin: 35px 0;
 }
   
 .home-logo {
@@ -20,7 +19,8 @@
   color: #282c34; 
   font-size:  24px;
   font-family: Montserrat;
-  text-decoration: none ;}
+  text-decoration: none ;
+}
   
 .home-nav-link:hover {
   text-decoration: underline;
