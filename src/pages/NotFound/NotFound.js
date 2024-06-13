@@ -1,15 +1,13 @@
 import React from 'react';
-import NotFoundContent from '../../components/NotFoundContent/NotFoundContent';
-import '../../components/NotFoundContent/NotFoundContent';
+import './NotFound.css'; 
 
 const NotFound = () => {
   return (
-    <NotFoundContent
-      text="404"
-      errorMessage="Oups! La page que vous demandez n'existe pas."
-      linkText="Retourner sur la page d’accueil"
-      linkUrl="/"
-    />
+    <div className="not-found">
+      <h1>404</h1>
+      <p>Oups! La page que vous demandez n'existe pas.</p>
+      <a href="/" className="back-home-link">Retourner sur la page d’accueil</a>
+    </div>
   );
 };
 
