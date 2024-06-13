@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
 import '../../components/Banner/Banner.css'; 
@@ -7,22 +7,16 @@ import bannerImage from '../../assets/images/Banner1.png';
 import logementsData from '../../assets/logements.json'; 
 
 const Home = () => {
-  const [cardData, setCardData] = useState([]);
-
-  useEffect(() => {
-    // Simulez le fetch en utilisant les données importées directement
-    const data = logementsData.slice(0, 6).map(item => ({
-      title: item.title,
-      image: item.cover
-    }));
-    setCardData(data);
-  }, []);
+  const cardData = logementsData.slice(0, 6).map(item => ({
+    title: item.title,
+    image: item.cover
+  }));
 
   return (
-    <main >
+    <main>
       <Banner title="Chez vous, partout et ailleurs" image={bannerImage} />
-      <div class="home-content">
-        <div class="cards-container">
+      <div className="home-content">
+        <div className="cards-container">
           {cardData.map((card, index) => (
             <Card 
               key={index} 
