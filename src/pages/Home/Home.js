@@ -10,7 +10,7 @@ const Home = () => {
   const [cardData, setCardData] = useState([]);
 
   useEffect(() => {
-    // Simuler le fetch en utilisant les données importées directement
+    // Simulez le fetch en utilisant les données importées directement
     const data = logementsData.slice(0, 6).map(item => ({
       title: item.title,
       image: item.cover
