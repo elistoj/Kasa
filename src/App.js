@@ -1,6 +1,10 @@
+// RouterApp.js
+
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import NotFound from './pages/NotFound/NotFound'
+import About from './pages/A-propos/A-propos'; 
+import NotFound from './pages/NotFound/NotFound';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import logoHeader from './assets/images/logo.png';
@@ -12,7 +16,7 @@ const RouterApp = () => {
     logoPath: logoHeader,
     links: [
       { path: '/', label: 'Accueil' },
-      { path: '/about', label: 'À propos' },
+      { path: '/about', label: 'À propos' }, 
     ],
   };
 
@@ -26,6 +30,7 @@ const RouterApp = () => {
       <Header logo={headerData.logoPath} links={headerData.links} />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} /> 
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer logo={footerData.logoPath} text={footerData.text} />
