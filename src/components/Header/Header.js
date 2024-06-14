@@ -1,22 +1,24 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import logoHeader from '../../assets/images/logo.png';
 import './Header.css';
+import UnderlinedNavLink from '../UnderlinedNavLink/UnderlinedNavLink';
 
-const Header = ({ logo, links }) => {
-  const location = useLocation();
+const Header = () => {
+  const links = [
+    { path: '/', label: 'Accueil' },
+    { path: '/about', label: 'À propos' },
+  ];
 
   return (
     <header className="home-header">
-      <img src={logo} alt="Kasa logo" className="home-logo" />
+      <img src={logoHeader} alt="Kasa logo" className="home-logo" />
       <nav className="home-nav">
         {links.map((link, index) => (
-          <NavLink
+          <UnderlinedNavLink
             key={index}
             to={link.path}
-            className={`home-nav-link ${location.pathname === link.path ? "underline-on-active" : ""}`}
-          >
-            {link.label}
-          </NavLink>
+            label={link.label}
+          />
         ))}
       </nav>
     </header>
