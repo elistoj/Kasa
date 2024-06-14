@@ -1,0 +1,103 @@
+.carousel .slide img {
+  width: 100%;
+  height: 415px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.carousel .slide {
+  background: none;  
+
+}
+
+.indicator {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.indicator.selected {
+  background-color: #333;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  min-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.left-arrow,
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 92px; /* Povećava veličinu strelki */
+  font-weight: 900; /* Povećava debljinu strelki */
+  color: #fff;
+  padding: 20px 15px; /* Prilagođava padding strelki */
+  cursor: pointer;
+  z-index: 2;
+}
+
+.left-arrow {
+  left: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.right-arrow {
+  right: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+
+
+.slide-index {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .left-arrow,
+  .right-arrow {
+    font-size: 40px;
+  }
+
+  .slide-index {
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    top:80%;
+  }
+
+  .carousel .slide img {
+    height: 200px;
+  }
+}
