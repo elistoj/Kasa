@@ -5,9 +5,11 @@ import '../../components/Banner/Banner.css';
 import '../../components/Card/Card.css'; 
 import bannerImage from '../../assets/images/Banner1.png';
 import logementsData from '../../assets/logements.json'; 
+import './Home.css'
 
 const Home = () => {
-  const cardData = logementsData.slice(0, 6).map(item => ({
+  const cardData = logementsData.map(item => ({
+    id: item.id,
     title: item.title,
     image: item.cover
   }));
@@ -15,17 +17,18 @@ const Home = () => {
   return (
     <main>
       <Banner title="Chez vous, partout et ailleurs" image={bannerImage} />
-      <div className="home-content">
+      <section className="home-content">
         <div className="cards-container">
           {cardData.map((card, index) => (
             <Card 
               key={index} 
+              id={card.id}
               title={card.title} 
               image={card.image} 
             />
           ))}
         </div>
-      </div>
+      </section>
     </main>
   );
 };
