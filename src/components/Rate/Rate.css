@@ -1,0 +1,25 @@
+.rate-container {
+  display: flex;
+}
+
+.star {
+  font-size: 36px;
+  color: #ddd; /* Боја за празните ѕвезди */
+}
+
+.star.filled {
+  color: rgba(255, 96, 96, 1); 
+}
+
+@media (max-width: 480px) {
+  .rate-container {
+      justify-content: center;  
+      margin-top: 30px;
+      gap: 4px;  
+      text-wrap: nowrap;
+  }
+
+  .star {
+      font-size: 22px; /* Намалете ја големината на ѕвездите на мобилни уреди */
+  }
+}
