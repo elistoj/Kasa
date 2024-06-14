@@ -2,25 +2,27 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
   
 .home-logo {
-  Width:210.32px;
-  Height:68px;
+  width: 210.32px;
+  height: 68px;
 }
   
 .home-nav {
   display: flex;
   justify-content: space-between;
   width: 309px;
-  padding:  20px 0 0 0 ;
+  padding:  20px 0 0 0;
 }
   
 .home-nav-link {
   color: #282c34; 
   font-size:  24px;
   font-family: Montserrat;
-  text-decoration: none ;
+  text-decoration: none;
 }
   
 .home-nav-link:hover {
@@ -31,6 +33,29 @@
   text-decoration: underline !important;
 }
 
-.underline-on-active {
-  text-decoration: underline;
+/* Responsive  */
+@media (max-width: 480px) {
+  .home-header {
+    margin: 0 20px;
+    
+  }
+  .home-nav-link {
+    text-transform: uppercase; 
+  }
+
+  .home-logo {
+    width: 40%; 
+    height: 46px;
+    margin-bottom: 20px; 
+  }
+
+  .home-nav {
+    width: 100%;
+    justify-content: flex-end; 
+    gap: 20px;
+  }
+
+  .home-nav-link {
+    font-size: 80%; 
+  }
 }
