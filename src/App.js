@@ -9,10 +9,6 @@ import './App.css';
 import FicheLogement from './pages/Fiche-Logement/Fiche-Logement';
 
 const RouterApp = () => {
-  const footerData = {
-    text: '© 2020 Kasa. All rights reserved',
-  };
-
   return (
     <Router>
       <Header />
@@ -22,7 +18,7 @@ const RouterApp = () => {
         <Route path="/logement/:id" element={<FicheLogement />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer text={footerData.text} />
+      <Footer />
     </Router>
   );
 };

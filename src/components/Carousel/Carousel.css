@@ -51,10 +51,10 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 92px; /* Povećava veličinu strelki */
-  font-weight: 900; /* Povećava debljinu strelki */
+  font-size: 92px;  
+  font-weight: 900;  
   color: #fff;
-  padding: 20px 15px; /* Prilagođava padding strelki */
+  padding: 20px 15px;  
   cursor: pointer;
   z-index: 2;
 }

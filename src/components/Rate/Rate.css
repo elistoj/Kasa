@@ -4,7 +4,7 @@
 
 .star {
   font-size: 36px;
-  color: #ddd; /* Боја за празните ѕвезди */
+  color: #ddd; 
 }
 
 .star.filled {
@@ -20,6 +20,6 @@
   }
 
   .star {
-      font-size: 22px; /* Намалете ја големината на ѕвездите на мобилни уреди */
+      font-size: 22px; 
   }
 }

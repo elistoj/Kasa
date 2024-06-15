@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 100px; /* Намалување на маргината на долната страна за подобар мобилен приказ */
+  margin-bottom: 100px; 
 }
 
 .not-found h1 {
@@ -23,13 +23,13 @@
 }
 
 .back-home-link {
-  font-size: 16px; /* Намалување на големината на линкот за мобилен приказ */
+  font-size: 16px; 
   font-weight: 500;
   font-family: Montserrat;
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 1);
   color: rgba(0, 0, 0, 1);
-  margin-top: 20px; /* Повисок маргин на врзот за подобар разделувач */
+  margin-top: 20px; 
 }
 
 .back-home-link:hover {

@@ -50,7 +50,7 @@ body {
 .carousel-name {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Align items vertically in the middle */
+  align-items: center; 
   color: rgba(255, 96, 96, 1);
   margin-top: 50px;
 }
@@ -154,6 +154,7 @@ h1 {
   .rateTags {
     flex-direction: column;
     align-items: flex-start;
+    gap: 70px;
   }
 
   .host-info {
@@ -191,8 +192,6 @@ h1 {
     flex-direction: row-reverse;
     margin-top: 30px;
     justify-content: space-between;
-    width: 100%;
-    gap:80px;
   }
 }
 
