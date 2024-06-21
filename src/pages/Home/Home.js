@@ -8,6 +8,7 @@ import logementsData from '../../assets/logements.json';
 import './Home.css'
 
 const Home = () => {
+  // Transforme les données des logements en données utilisables par les cartes
   const cardData = logementsData.map(item => ({
     id: item.id,
     title: item.title,
@@ -16,15 +17,17 @@ const Home = () => {
 
   return (
     <main>
+      {/* Composant Banner avec un titre et une image spécifiques */}
       <Banner title="Chez vous, partout et ailleurs" image={bannerImage} />
       <section className="home-content">
-        <div className="cards-container">
+        <div className="cards-container"> {/* Conteneur pour afficher les cartes */}
+          {/* Mapping à travers les données des cartes pour afficher chaque carte */}
           {cardData.map((card, index) => (
             <Card 
-              key={index} 
-              id={card.id}
-              title={card.title} 
-              image={card.image} 
+              key={index} // Clé unique pour chaque carte
+              id={card.id} // ID du logement associé à la carte
+              title={card.title} // Titre du logement associé à la carte
+              image={card.image} // Image de couverture du logement associé à la carte
             />
           ))}
         </div>

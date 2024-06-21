@@ -8,20 +8,22 @@ import './A-propos.css';
 const About = () => {
   return (
     <main>
+      {/* Composant Banner avec une image spécifique */}
       <Banner image={bannerImage} />
       <section className="apropos-content">
-        <div className="collapses-container">
-          <Collapse title="Fiabilité" className="reliability-collapse">
-            <p>{textData.reliability}</p>
+        <div className="collapses-container"> {/* Conteneur pour afficher les collapses */}
+          {/* Chaque Collapse représente un aspect de l'application */}
+          <Collapse title="Fiabilité" className="apropos-collapse-title">
+            <p>{textData.reliability}</p> {/* Texte de fiabilité provenant du fichier JSON */}
           </Collapse>
-          <Collapse title="Respect" className="respect-collapse">
-            <p>{textData.respect}</p>
+          <Collapse title="Respect" className="apropos-collapse-title">
+            <p>{textData.respect}</p>  
           </Collapse>
-          <Collapse title="Service" className="service-collapse">
-            <p>{textData.service}</p>
+          <Collapse title="Service" className="apropos-collapse-title">
+            <p>{textData.service}</p>  
           </Collapse>
-          <Collapse title="Sécurité" className="security-collapse">
-            <p>{textData.security}</p>
+          <Collapse title="Sécurité" className="apropos-collapse-title">
+            <p>{textData.security}</p>  
           </Collapse>
         </div>
       </section>

@@ -13,6 +13,7 @@ main{
 
 
 @media (max-width: 480px) {
+
   .home-content {
     padding: 5px;
   }

@@ -22,12 +22,18 @@
   margin-left: 20px;
 }
 
-.collapse-content p {
+.collapses-container .collapse-content p {
   margin-left: 0; 
   margin-bottom: 15px; 
+  font-family: 'Montserrat', sans-serif;;
   font-size: 18px;
 }
-
+.collapses-container .collapse-title{
+  font-size: 24px;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;;
+  line-height:34.22px;
+}
 @media (max-width: 480px) {
   .collapse {
     width: 100%; 
@@ -36,5 +42,13 @@
   .apropos-content{
     padding: 20px 8px;
   }
-  
+  .collapses-container .collapse-content p {
+      font-size: 12px;
+  }
+  .collapses-container .collapse-title{
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;;
+    line-height:34.22px;
+  }
 }

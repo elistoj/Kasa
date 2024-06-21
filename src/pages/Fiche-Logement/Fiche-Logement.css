@@ -41,12 +41,36 @@ body {
   transition: transform 0.3s ease;
 }
 
-.collapse-logement.open .arrow {
-  transform: rotate(360deg);
+.collapse-logement.open .arrow i {
+  animation: rotateDown 0.5s forwards;
 }
-.collapses-container-log .collapse{
+
+.arrow i {
+  animation: rotateUp 0.5s forwards;
+}
+
+@keyframes rotateDown {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateUp {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.collapses-container-log .collapse {
   margin-left: 0;
 }
+
 .carousel-name {
   display: flex;
   justify-content: space-between;
@@ -87,7 +111,7 @@ body {
   flex-direction: column;
   justify-content: center;
   margin-right: 5px;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;;
   font-size: 18px;
   font-weight: 500;
   color: rgba(255, 96, 96, 1);
@@ -95,20 +119,20 @@ body {
 
 .collapse-logement-content p {
   padding: 10px 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;;
   font-size: 18px;
   font-weight: 400;
 }
 
 .collapse-logement-content ul {
   padding: 10px 0;
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;;
   font-size: 18px;
   font-weight: 400;
 }
 
 .location {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;;
   font-size: 18px;
   font-weight: 500;
   display: flex;
@@ -117,19 +141,21 @@ body {
 }
 
 h1 {
-  font-family: Montserrat;
+  font-family: 'Montserrat', sans-serif;;
   font-size: 36px;
   font-weight: 500;
 }
 
-/* Responsive Styles */
+/* Responsive  */
 @media (max-width: 480px) {
   main {
     margin: 0 20px;
   }
-  .host-info img{
+
+  .host-info img {
     width: 42px;
   }
+
   p {
     width: 100%;
     align-items: center;
@@ -163,7 +189,6 @@ h1 {
     justify-content: space-around;
     width: 100%;
     gap: 0;
-
   }
 
   .collapses-container-log {
@@ -188,11 +213,10 @@ h1 {
     flex-direction: column;
     padding-left: 10px;
   }
+
   .nameRate {
     flex-direction: row-reverse;
     margin-top: 30px;
     justify-content: space-between;
   }
 }
-
-

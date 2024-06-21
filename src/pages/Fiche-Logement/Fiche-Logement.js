@@ -8,19 +8,22 @@ import Tags from '../../components/Tags/Tags';
 import Rate from '../../components/Rate/Rate';
 import './Fiche-Logement.css';
 
-const FicheLogement = () => {
-  const { id } = useParams();
 
+const FicheLogement = () => {
+  const { id } = useParams(); // Extraction de l'ID à partir des paramètres de l'URL
+
+  // Recherche du logement correspondant à l'ID dans les données
   const logement = logementsData.find(item => item.id === id);
 
+  // Si aucun logement n'est trouvé, affiche la composante NotFound
   if (!logement) {
     return <NotFound />;
   }
 
+  // Suppression des images en double à l'aide d'un Set et conversion en tableau
   const uniquePictures = Array.from(new Set(logement.pictures));
 
-  console.log("Logement:", logement);
-
+  // Affichage des détails du logement
   return (
     <main>
       <CarouselComponent pictures={uniquePictures} title={logement.title} />
@@ -40,18 +43,20 @@ const FicheLogement = () => {
               <span>{logement.host.name.split(' ')[0]}</span>
               <span>{logement.host.name.split(' ')[1]}</span>
             </div>
-            <img src={logement.host.picture} alt={`Host ${logement.host.name}`} />
+            <img src={logement.host.picture} alt={`Hôte ${logement.host.name}`} />
           </div>
         </div>
       </div>
 
       <div className="collapses-container-log">
+        {/* Collapse pour la description */}
         <Collapse title="Description" className="collapse-logement description-collapse">
           <div className="collapse-logement-content">
             <p>{logement.description}</p>
           </div>
         </Collapse>
 
+        {/* Collapse pour les équipements */}
         {logement.equipments && (
           <Collapse title="Équipements" className="collapse-logement amenities-collapse">
             <div className="collapse-logement-content">
