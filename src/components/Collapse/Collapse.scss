@@ -1,0 +1,95 @@
+$color-primary: rgba(255, 96, 96, 1);
+$font-family: 'Montserrat', sans-serif;
+$media-breakpoint: 480px;
+
+.collapse {
+  margin-bottom: 20px;
+}
+
+.collapse-header {
+  width: 90%;
+  height: 52px;
+  border-radius: 10px;
+  background-color: $color-primary;
+  padding: 10px 20px 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover {
+    background-color: darken($color-primary, 10%);
+  }
+
+  @media (max-width: $media-breakpoint) {
+    width: 90%;
+    height: 30px;
+  }
+}
+
+.collapse-title {
+  font-size: 24px;
+  color: white;
+  font-family: $font-family;
+  font-weight: 700;
+
+  @media (max-width: $media-breakpoint) {
+    font-size: 13px;
+  }
+}
+
+.arrow {
+  font-size: 18px;
+  color: white;
+}
+
+.collapse-content {
+  max-height: 0;
+  width: 90%;
+  overflow: hidden;
+  transition: max-height 0.7s ease;
+  padding-left: 10px;
+  display: none; 
+  @media (max-width: $media-breakpoint) {
+    width: 90%;
+    font-size: 18px;
+  }
+}
+
+.open .collapse-content {
+  max-height: 500px; 
+  display: flex; 
+}
+
+.open .arrow i {
+  animation: rotateUp 0.7s forwards;
+}
+
+@keyframes rotateUp {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Responsive styles
+@media (max-width: $media-breakpoint) {
+  .collapse-header {
+    width: 90%;
+    height: 30px;
+  }
+
+  .collapse-title {
+    font-size: 13px;
+  }
+
+  .arrow {
+    font-size: 16px;
+  }
+
+  .collapse-content {
+    width: 90%;
+  }
+}

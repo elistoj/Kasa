@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Collapse.css';
+import './Collapse.scss';
 
 const Collapse = ({ title, children, className }) => {
   // État local pour déterminer si le collapse est ouvert ou fermé

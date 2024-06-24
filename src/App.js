@@ -5,7 +5,7 @@ import About from './pages/A-propos/A-propos';
 import NotFound from './pages/NotFound/NotFound';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import './App.css';
+import './App.scss';
 import FicheLogement from './pages/Fiche-Logement/Fiche-Logement';
 
 const RouterApp = () => {

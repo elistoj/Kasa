@@ -3,7 +3,7 @@ import Banner from '../../components/Banner/Banner';
 import Collapse from '../../components/Collapse/Collapse';
 import bannerImage from '../../assets/images/banner.png';
 import textData from '../../assets/text-collapse.json'; 
-import './A-propos.css';
+import './A-propos.scss';
 
 const About = () => {
   return (

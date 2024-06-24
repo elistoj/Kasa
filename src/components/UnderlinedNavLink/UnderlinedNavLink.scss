@@ -1,0 +1,8 @@
+.home-nav-link {
+  text-decoration: none;
+  color: #333;
+
+  &.underline-on-active {
+    text-decoration: underline;
+  }
+}

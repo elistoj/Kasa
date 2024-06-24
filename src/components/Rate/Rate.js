@@ -1,5 +1,5 @@
 import React from 'react';
-import './Rate.css';
+import './Rate.scss';
 
 const Rate = ({ rating }) => {
   const maxRating = 5; // Définit la note maximale possible, en l'occurrence 5 étoiles

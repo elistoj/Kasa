@@ -1,0 +1,92 @@
+$background-color-light: rgba(246, 246, 246, 1);
+$background-color-card: rgba(255, 96, 96, 1);
+$box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
+$font-family: 'Montserrat', sans-serif;
+$font-size-title: 18px;
+$font-weight-bold: 700;
+$border-radius-container: 20px;
+$border-radius-card: 8px;
+$media-breakpoint: 480px;
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 30px 0;
+  background-color: $background-color-light;
+  border-radius: $border-radius-container;
+
+  @media (max-width: $media-breakpoint) {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 8px;
+    background-color: white;
+  }
+}
+
+.card-link {
+  border: 1px solid #ddd;
+  border-radius: $border-radius-card;
+  overflow: hidden;
+  margin: 30px;
+  box-shadow: $box-shadow-light;
+  width: 27%;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: $background-color-card;
+  position: relative;
+
+  &:hover .card-image {
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    height: 100%;
+  }
+
+  @media (max-width: $media-breakpoint) {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+.card {
+  height: 100%;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.card-title {
+  font-size: $font-size-title;
+  font-weight: $font-weight-bold;
+  width: 80%;
+  margin: 0;
+  font-family: $font-family;
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+  position: relative;
+  justify-content: flex-end;
+  padding-top: 85%;
+  text-decoration: none;
+
+  @media (max-width: $media-breakpoint) {
+    font-size: 16px;
+    padding-top: 80%;
+  }
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+
+  @media (max-width: $media-breakpoint) {
+    height: 100%;
+  }
+}

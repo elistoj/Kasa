@@ -6,7 +6,7 @@ import Collapse from '../../components/Collapse/Collapse';
 import CarouselComponent from '../../components/Carousel/Carousel';
 import Tags from '../../components/Tags/Tags';
 import Rate from '../../components/Rate/Rate';
-import './Fiche-Logement.css';
+import './Fiche-Logement.scss';
 
 
 const FicheLogement = () => {

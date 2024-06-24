@@ -1,5 +1,5 @@
 import React from 'react';
-import './Banner.css';
+import './Banner.scss';
 
 const Banner = ({ title, image }) => (
   <div className="banner"> {/* Conteneur principal de la bannière */}

@@ -1,0 +1,70 @@
+// Variables
+$font-family: 'Montserrat', sans-serif;
+$font-size-base: 18px;
+$font-size-large: 24px;
+$font-size-small: 12px;
+$font-weight-bold: 700;
+$line-height: 34.22px;
+$margin-base: 20px;
+$padding-base: 20px;
+$padding-small: 8px;
+$width-full: 100%;
+$width-collapse: 90%;
+$media-breakpoint: 480px;
+
+.apropos-content {
+  padding: $padding-base;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: start;
+  font-size: $font-size-base;
+
+  @media (max-width: $media-breakpoint) {
+    padding: $padding-base $padding-small;
+  }
+}
+
+.collapses-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: $width-full;
+  margin-top: $margin-base;
+  
+  .collapse {
+    margin-bottom: $margin-base;
+    width: $width-collapse;
+    margin-left: $margin-base;
+
+    @media (max-width: $media-breakpoint) {
+      width: $width-full;
+      margin-left: 0;
+    }
+
+    .collapse-title {
+      font-size: $font-size-large;
+      font-weight: $font-weight-bold;
+      font-family: $font-family;
+      line-height: $line-height;
+
+      @media (max-width: $media-breakpoint) {
+        font-size: 13px;
+      }
+    }
+
+    .collapse-content {
+      p {
+        margin-left: 0;
+        margin-bottom: 15px;
+        font-family: $font-family;
+        font-size: $font-size-base;
+
+        @media (max-width: $media-breakpoint) {
+          font-size: $font-size-small;
+        }
+      }
+    }
+  }
+}

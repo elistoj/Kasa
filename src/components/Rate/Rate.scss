@@ -1,0 +1,23 @@
+.rate-container {
+  display: flex;
+
+  .star {
+    font-size: 36px;
+    color: #ddd;
+
+    &.filled {
+      color: rgba(255, 96, 96, 1);
+    }
+  }
+
+  @media (max-width: 480px) {
+    justify-content: center;
+    margin-top: 30px;
+    gap: 4px;
+    white-space: nowrap;
+
+    .star {
+      font-size: 22px;
+    }
+  }
+}

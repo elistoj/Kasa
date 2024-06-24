@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Carousel.css';
+import './Carousel.scss';
 
 const CarouselComponent = ({ pictures, title }) => {
   // État local pour suivre l'indice de la diapositive actuellement affichée

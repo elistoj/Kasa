@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import './UnderlinedNavLink.css';
+import './UnderlinedNavLink.scss';
 
 const UnderlinedNavLink = ({ to, label }) => {
   const location = useLocation();

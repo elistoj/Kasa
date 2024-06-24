@@ -1,11 +1,11 @@
 import React from 'react';
 import Banner from '../../components/Banner/Banner';
 import Card from '../../components/Card/Card';
-import '../../components/Banner/Banner.css'; 
-import '../../components/Card/Card.css'; 
+import '../../components/Banner/Banner.scss'; 
+import '../../components/Card/Card.scss'; 
 import bannerImage from '../../assets/images/Banner1.png';
 import logementsData from '../../assets/logements.json'; 
-import './Home.css'
+import './Home.scss'
 
 const Home = () => {
   // Transforme les données des logements en données utilisables par les cartes

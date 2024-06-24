@@ -1,6 +1,6 @@
 import React from 'react';
 import logoHeader from '../../assets/images/logo.png';
-import './Header.css';
+import './Header.scss';
 import UnderlinedNavLink from '../UnderlinedNavLink/UnderlinedNavLink';
 
 const Header = () => {
