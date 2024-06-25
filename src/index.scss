@@ -21,8 +21,8 @@ code {
 }
 
 html, body {
-  width: 100%;
-  min-height: $width-full;
+  width: $width-full;
+  min-height: 100%;
 }
 
 img {

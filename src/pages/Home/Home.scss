@@ -1,14 +1,16 @@
 @import '../../styles/variables.scss';
 
 main {
-  margin: 0 20px;
+  margin-left: 0 20px;
 
   .home-logo {
     height: 40px; 
   }
   
   .home-content {
-    padding: $padding-base;
+    padding-right: 22px;
+    padding-left: 10px;
+    padding-top: 15px;
 
     @media (max-width: $media-breakpoint) {
       padding: 5px;

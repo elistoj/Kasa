@@ -13,7 +13,7 @@
   justify-content: center;
   color: white;
   text-shadow: $banner-title-text-shadow;
-  margin-left: $banner-margin-left;
+  margin-left: 10px;
 
   &::before {
     content: '';
@@ -32,6 +32,7 @@
     font-size: $banner-title-font-size;
     z-index: 2;
     font-family: $font-family;
+    font-weight: $font-weight-bold;
   }
 
   .banner-img {
@@ -47,12 +48,11 @@
 
   @media (max-width: $media-breakpoint) {
     height: $banner-height-mobile;
-    margin-left: $banner-margin-left-mobile;
+    justify-content: flex-start;
 
     .banner-title {
       font-size: $banner-title-font-size-mobile;
-      text-align: start;
-      margin-left: $banner-margin-left-mobile;
+      margin-left:$margin-base;
     }
 
     &::before {

@@ -11,8 +11,9 @@
   @media (max-width: $media-breakpoint) {
     flex-direction: column;
     align-items: center;
-    margin-left: 8px;
+    margin-left: 5px;
     background-color: white;
+    margin-top: 0;
   }
 }
 
@@ -20,15 +21,16 @@
   border: 1px solid #ddd;
   border-radius: $border-radius-card;
   overflow: hidden;
-  margin: 30px;
+  margin: 36px;
   box-shadow: $box-shadow-light;
   width: 27%;
-  height: 340px;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   background: $background-color-light;
   position: relative;
+  text-decoration: none;
 
   &:hover .card-image {
     opacity: 0.8;
@@ -70,6 +72,7 @@
     font-size: 16px;
     padding-top: 80%;
   }
+
 }
 
 .card-image {
