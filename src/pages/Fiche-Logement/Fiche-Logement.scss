@@ -1,16 +1,5 @@
-// Variables
-$primary-color: rgba(255, 96, 96, 1);
-$font-family: 'Montserrat', sans-serif;
-$font-size-base: 18px;
-$font-weight-bold: 700;
-$font-weight-medium: 500;
-$font-weight-regular: 400;
-$padding-base: 10px;
-$transition-duration: 0.3s;
-$collapse-max-height: 500px;
-$collapse-header-height: 52px;
+@import '../../styles/variables.scss';
 
-// General styles
 .collapses-container-log {
   display: flex;
   gap: 60px;

@@ -1,23 +1,11 @@
-$banner-height: 223px;
-$banner-height-mobile: 111px;
-$banner-width: 97%;
-$banner-border-radius: 20px;
-$banner-border-radius-mobile: 10px;
-$banner-background-color: rgba(0, 0, 0, 0.2);
-$banner-filter: brightness(0.6);
-$banner-margin-left: 20px;
-$banner-margin-left-mobile: 10px;
-$banner-title-font-size: 48px;
-$banner-title-font-size-mobile: 24px;
-$banner-title-font-family: 'Montserrat', sans-serif;
-$banner-title-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-$breakpoint-mobile: 480px;
+@import '../../styles/variables.scss';
+
 
 .banner {
   position: relative;
   width: $banner-width;
   height: $banner-height;
-  border-radius: $banner-border-radius;
+  border-radius: $border-radius;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -36,14 +24,14 @@ $breakpoint-mobile: 480px;
     height: 100%;
     background: $banner-background-color;
     z-index: 1;
-    border-radius: $banner-border-radius;
+    border-radius: $border-radius;
   }
 
   .banner-title {
     position: relative;
     font-size: $banner-title-font-size;
     z-index: 2;
-    font-family: $banner-title-font-family;
+    font-family: $font-family;
   }
 
   .banner-img {
@@ -54,10 +42,10 @@ $breakpoint-mobile: 480px;
     height: 100%;
     object-fit: cover;
     filter: $banner-filter;
-    border-radius: $banner-border-radius;
+    border-radius: $border-radius;
   }
 
-  @media (max-width: $breakpoint-mobile) {
+  @media (max-width: $media-breakpoint) {
     height: $banner-height-mobile;
     margin-left: $banner-margin-left-mobile;
 

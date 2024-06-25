@@ -1,6 +1,5 @@
-$primary-color: #282c34;
-$link-color: #61dafb;
-$font-size-base: calc(10px + 2vmin);
+@import './styles/variables.scss';
+
 
 .App {
   text-align: center;
@@ -15,7 +14,7 @@ $font-size-base: calc(10px + 2vmin);
   }
 
   &-header {
-    background-color: $primary-color;
+    background-color: $color-primary;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

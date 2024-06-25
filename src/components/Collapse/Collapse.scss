@@ -1,6 +1,5 @@
-$color-primary: rgba(255, 96, 96, 1);
-$font-family: 'Montserrat', sans-serif;
-$media-breakpoint: 480px;
+@import '../../styles/variables.scss';
+
 
 .collapse {
   margin-bottom: 20px;
@@ -10,7 +9,7 @@ $media-breakpoint: 480px;
   width: 90%;
   height: 52px;
   border-radius: 10px;
-  background-color: $color-primary;
+  background-color: $primary-color;
   padding: 10px 20px 10px 15px;
   display: flex;
   justify-content: space-between;
@@ -18,7 +17,7 @@ $media-breakpoint: 480px;
   cursor: pointer;
 
   &:hover {
-    background-color: darken($color-primary, 10%);
+    background-color: darken($primary-color, 10%);
   }
 
   @media (max-width: $media-breakpoint) {
@@ -74,7 +73,6 @@ $media-breakpoint: 480px;
   }
 }
 
-// Responsive styles
 @media (max-width: $media-breakpoint) {
   .collapse-header {
     width: 90%;

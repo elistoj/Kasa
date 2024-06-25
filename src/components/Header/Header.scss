@@ -1,7 +1,5 @@
-$font-family: 'Montserrat', sans-serif;
-$color-nav-link: #282c34;
-$color-primary: rgba(255, 96, 96, 1);
-$media-breakpoint: 480px;
+@import '../../styles/variables.scss';
+
 
 .home-header {
   display: flex;
@@ -40,7 +38,7 @@ $media-breakpoint: 480px;
 }
 
 .home-nav-link {
-  color: $color-nav-link;
+  color: $color-primary;
   font-size: 24px;
   font-family: $font-family;
   text-decoration: none;

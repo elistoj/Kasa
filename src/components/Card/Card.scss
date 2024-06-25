@@ -1,12 +1,4 @@
-$background-color-light: rgba(246, 246, 246, 1);
-$background-color-card: rgba(255, 96, 96, 1);
-$box-shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
-$font-family: 'Montserrat', sans-serif;
-$font-size-title: 18px;
-$font-weight-bold: 700;
-$border-radius-container: 20px;
-$border-radius-card: 8px;
-$media-breakpoint: 480px;
+@import '../../styles/variables.scss';
 
 .cards-container {
   display: flex;
@@ -14,7 +6,7 @@ $media-breakpoint: 480px;
   justify-content: space-between;
   margin: 30px 0;
   background-color: $background-color-light;
-  border-radius: $border-radius-container;
+  border-radius: $border-radius;
 
   @media (max-width: $media-breakpoint) {
     flex-direction: column;
@@ -35,7 +27,7 @@ $media-breakpoint: 480px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background: $background-color-card;
+  background: $background-color-light;
   position: relative;
 
   &:hover .card-image {
@@ -45,7 +37,7 @@ $media-breakpoint: 480px;
   }
 
   @media (max-width: $media-breakpoint) {
-    width: 100%;
+    width: $width-full;
     margin: 10px 0;
   }
 }
@@ -59,7 +51,7 @@ $media-breakpoint: 480px;
 }
 
 .card-title {
-  font-size: $font-size-title;
+  font-size: $font-size-base;
   font-weight: $font-weight-bold;
   width: 80%;
   margin: 0;
@@ -81,7 +73,7 @@ $media-breakpoint: 480px;
 }
 
 .card-image {
-  width: 100%;
+  width: $width-full;
   height: 100%;
   object-fit: cover;
   position: absolute;

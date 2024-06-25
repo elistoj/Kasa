@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 main {
   margin: 0 20px;
 
@@ -6,9 +8,9 @@ main {
   }
   
   .home-content {
-    padding: 20px;
+    padding: $padding-base;
 
-    @media (max-width: 480px) {
+    @media (max-width: $media-breakpoint) {
       padding: 5px;
     }
   }

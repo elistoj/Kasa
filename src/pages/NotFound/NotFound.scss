@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .not-found {
   display: flex;
   flex-direction: column;
@@ -7,24 +9,24 @@
   margin-bottom: 100px;
 
   h1 {
-    color: rgba(255, 96, 96, 1);
+    color: $primary-color;
     font-size: 150px;
-    font-weight: 700;
-    font-family: 'Montserrat';
+    font-weight: $font-weight-bold;
+    font-family: $font-family;
     margin-bottom: 0.5rem;
   }
 
   p {
-    color: rgba(255, 96, 96, 1);
+    color: $primary-color;
     font-size: 24px;
     font-weight: 500;
-    font-family: 'Montserrat';
+    font-family: $font-family;
   }
 
   .back-home-link {
     font-size: 16px;
-    font-weight: 500;
-    font-family: 'Montserrat';
+    font-weight: $font-weight-medium;
+    font-family: $font-family;
     text-decoration: none;
     border-bottom: 1px solid rgba(0, 0, 0, 1);
     color: rgba(0, 0, 0, 1);
@@ -36,7 +38,7 @@
     }
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: $media-breakpoint) {
     h1 {
       font-size: 96px;
       margin-top: 70px;

@@ -1,16 +1,4 @@
-// Variables
-$font-family: 'Montserrat', sans-serif;
-$font-size-base: 18px;
-$font-size-large: 24px;
-$font-size-small: 12px;
-$font-weight-bold: 700;
-$line-height: 34.22px;
-$margin-base: 20px;
-$padding-base: 20px;
-$padding-small: 8px;
-$width-full: 100%;
-$width-collapse: 90%;
-$media-breakpoint: 480px;
+@import '../../styles/variables.scss';
 
 .apropos-content {
   padding: $padding-base;
@@ -44,7 +32,7 @@ $media-breakpoint: 480px;
     }
 
     .collapse-title {
-      font-size: $font-size-large;
+      font-size: $font-size-medium;
       font-weight: $font-weight-bold;
       font-family: $font-family;
       line-height: $line-height;

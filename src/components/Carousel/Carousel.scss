@@ -1,3 +1,5 @@
+@import '../../styles/variables.scss';
+
 .carousel {
   display: flex;
   transition: transform 0.5s ease;
@@ -11,7 +13,7 @@
 }
 
 .carousel .slide img {
-  width: 100%;
+  width: $width-full;
   height: 415px;
   object-fit: cover;
   border-radius: 25px;
@@ -33,7 +35,7 @@
 
 .carousel-container {
   position: relative;
-  width: 100%;
+  width: $width-full;
   overflow: hidden;
 }
 
@@ -69,12 +71,12 @@
   transform: translateX(-50%);
   color: #fff;
   padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  border-radius: $border-radius-small;
+  font-size: $font-size-base;
+  font-family: $font-family;
 }
 
-@media (max-width: 480px) {
+@media (max-width: $media-breakpoint) {
   .left-arrow,
   .right-arrow {
     font-size: 40px;

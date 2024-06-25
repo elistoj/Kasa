@@ -1,0 +1,37 @@
+@import '../../styles/variables.scss';
+
+.tags-container {
+    display: flex;
+    gap: 8px;
+    width: 40%;
+}
+
+.tag {
+    background-color: $primary-color;
+    border-radius: 10px;
+    padding: 5px 10px;
+    color: white;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: $font-family;
+    font-size: 14px;
+    font-weight: $font-weight-bold;
+    width: 35%;
+}
+
+@media (max-width: $media-breakpoint) {
+    .tags-container {
+        width: $width-full; 
+        text-wrap: wrap;
+    }
+
+    .tag {
+        width: 26%; 
+        margin-bottom: 8px;
+        font-size: 12px;
+        height: auto;
+    }
+}
